@@ -1,6 +1,6 @@
 const React = require('react')
 const PropTypes = require('prop-types')
-const DashboardPlugin = require('@uppy/dashboard')
+const DashboardPlugin = require('uppy-dashboard-evo')
 const basePropTypes = require('./propTypes').dashboard
 
 const h = React.createElement

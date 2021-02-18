@@ -1,4 +1,5 @@
 import { Uppy, Locale } from './CommonTypes';
+import {UppyFile} from "@uppy/core";
 
 interface MetaField {
   id: string;
@@ -29,6 +30,7 @@ export interface DashboardProps {
   disableThumbnailGenerator?: boolean;
   thumbnailWidth?: number;
   locale?: Locale;
+  onFilePreviewClick: (file: UppyFile) => {}
 }
 
 /**

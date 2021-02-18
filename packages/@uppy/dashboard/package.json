@@ -1,5 +1,5 @@
 {
-  "name": "@uppy/dashboard",
+  "name": "uppy-dashboard-evo",
   "description": "Universal UI plugin for Uppy.",
   "version": "1.3.0",
   "license": "MIT",
@@ -21,12 +21,18 @@
     "type": "git",
     "url": "git+https://github.com/transloadit/uppy.git"
   },
+  "publishConfig": {
+    "registry": "http://nexus.vdata/nexus/content/repositories/npm-internal/"
+  },
+  "files": [
+    "lib"
+  ],
   "dependencies": {
-    "@uppy/informer": "file:../informer",
-    "@uppy/provider-views": "file:../provider-views",
-    "@uppy/status-bar": "file:../status-bar",
-    "@uppy/thumbnail-generator": "file:../thumbnail-generator",
-    "@uppy/utils": "file:../utils",
+    "@uppy/informer": "1.3.0",
+    "@uppy/provider-views": "1.3.0",
+    "@uppy/status-bar": "1.3.0",
+    "@uppy/thumbnail-generator": "1.3.0",
+    "@uppy/utils": "1.3.0",
     "classnames": "^2.2.6",
     "cuid": "^2.1.1",
     "is-shallow-equal": "^1.0.1",
