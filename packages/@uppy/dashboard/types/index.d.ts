@@ -1,4 +1,5 @@
 import Uppy = require('@uppy/core');
+import {UppyFile} from "@uppy/utils";
 
 interface MetaField {
   id: string;
@@ -27,6 +28,7 @@ declare module Dashboard {
     hideProgressAfterFinish: boolean;
     disableInformer: boolean;
     disableThumbnailGenerator: boolean;
+    onFilePreviewClick: (file: UppyFile) => void;
   }
 }
 

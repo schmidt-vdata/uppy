@@ -119,7 +119,8 @@ module.exports = class Dashboard extends Plugin {
       proudlyDisplayPoweredByUppy: true,
       onRequestCloseModal: () => this.closeModal(),
       showSelectedFiles: true,
-      browserBackButtonClose: false
+      browserBackButtonClose: false,
+      onFilePreviewClick: (file) => {}
     }
 
     // merge default options with the ones set by user
@@ -832,6 +833,8 @@ module.exports = class Dashboard extends Plugin {
       allowedFileTypes: this.uppy.opts.restrictions.allowedFileTypes,
       maxNumberOfFiles: this.uppy.opts.restrictions.maxNumberOfFiles,
       showSelectedFiles: this.opts.showSelectedFiles,
+      onFilePreviewClick: this.opts.onFilePreviewClick,
+
       // drag props
       isDraggingOver: pluginState.isDraggingOver,
       handleDragOver: this.handleDragOver,

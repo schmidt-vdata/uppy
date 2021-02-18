@@ -32,12 +32,17 @@ module.exports = pure(function FileItem (props) {
     { 'is-noIndividualCancellation': !props.individualCancellation }
   )
 
+  const onFilePreviewClick = () => {
+    props.onFilePreviewClick(file);
+  }
+
   return (
     <li class={dashboardItemClass} id={`uppy_${file.id}`}>
       <div class="uppy-DashboardItem-preview">
         <FilePreviewAndLink
           file={file}
           showLinkToFileUploadResult={props.showLinkToFileUploadResult}
+          onFilePreviewClick={onFilePreviewClick}
         />
         <FileProgress
           error={error}

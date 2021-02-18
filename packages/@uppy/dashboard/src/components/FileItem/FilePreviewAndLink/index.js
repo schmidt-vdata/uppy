@@ -7,6 +7,7 @@ module.exports = function FilePreviewAndLink (props) {
     <div
       class="uppy-DashboardItem-previewInnerWrap"
       style={{ backgroundColor: getFileTypeIcon(props.file.type).color }}
+      onClick={props.onFilePreviewClick}
     >
       {
         props.showLinkToFileUploadResult &&
